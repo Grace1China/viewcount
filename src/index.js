@@ -1,4 +1,4 @@
-export default (router, { services, exceptions }) => {
+module.exports = function (router, { services, exceptions }) {
 	const { ItemsService, AuthenticationServicere } = services;
 	// console.log('services', services)
 	const { ServiceUnavailableException } = exceptions;
