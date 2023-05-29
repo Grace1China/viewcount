@@ -14,14 +14,6 @@
 		"source": "src/index.js",
 		"host": "^10.1.0"
 	},
-	"presets": [
-		[
-			"@babel/preset-env",
-			{
-				"modules": "commonjs"
-			}
-		]
-	],
 	"scripts": {
 		"b1": "babel src -d dist",
 		"build": "directus-extension build",

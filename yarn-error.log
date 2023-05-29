@@ -1,0 +1,68 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn build
+
+PATH: 
+  /Users/danielqin/.pyenv/plugins/pyenv-virtualenv/shims:/Users/danielqin/.pyenv/shims:/Users/danielqin/.pyenv/bin:/Users/danielqin/.pyenv/plugins/pyenv-virtualenv/shims:/Users/danielqin/.pyenv/shims:/Users/danielqin/.pyenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/danielqin/.pyenv/plugins/pyenv-virtualenv/shims:/Users/danielqin/.pyenv/shims:/Users/danielqin/.pyenv/bin:/Library/flutter/bin:/Library/flutter/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/danielqin/fountain/direct/ext/viewCount/package.json: Unexpected token / in JSON at position 788
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+  	"name": "directus-extension-viewCount",
+  	"description": "Please enter a description for your extension",
+  	"icon": "extension",
+  	"version": "1.0.0",
+  	"keywords": [
+  		"directus",
+  		"directus-extension",
+  		"directus-custom-endpoint"
+  	],
+  	"directus:extension": {
+  		"type": "endpoint",
+  		"path": "dist/index.js",
+  		"source": "src/index.js",
+  		"host": "^10.1.0"
+  	},
+  	"presets": [
+  		[
+  			"@babel/preset-env",
+  			{
+  				"modules": "commonjs"
+  			}
+  		]
+  	],
+  	"scripts": {
+  		"b1": "babel src -d dist",
+  		"build": "directus-extension build",
+  		"dev": "directus-extension build -w --no-minify",
+  		"link": "directus-extension link"
+  	},
+  	"devDependencies": {
+  		"@babel/core": "^7.21.8",
+  		"@babel/preset-env": "^7.21.5",
+  		"@babel/preset-modules": "^0.1.5",
+  		"@directus/extensions-sdk": "10.1.0"
+  	}
+  }
+  // "type": "module",
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
